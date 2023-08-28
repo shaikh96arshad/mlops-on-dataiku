@@ -16,7 +16,7 @@
     "users": []
   },
   "tutorialProject": true,
-  "tutorialId": "DKU_TUTORIAL_BASICS",
+  "tutorialId": "DKU_TUTORIAL_BASICS_101",
   "settings": {
     "flowAnchorSourcesAndSinks": true,
     "flowDisplaySettings": {
@@ -140,7 +140,8 @@
     },
     "dkuProperties": []
   },
-  "name": "Basics 101 (Tutorial)",
+  "name": "Basics 101 for Arshad Shaikh",
+  "projectStatus": "Sandbox",
   "imgPattern": 4,
   "showInitials": false,
   "metrics": {
@@ -199,11 +200,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 28,
+    "versionNumber": 29,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1693207439054,
+    "lastModifiedOn": 1693207441513,
     "extendedProperties": {}
   },
   "creationTag": {
