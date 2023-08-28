@@ -76,10 +76,8 @@
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
-      "scheme": "INDIVIDUAL_COLUMNS_VALUES",
-      "individualColumns": [
-        "new_deaths"
-      ],
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
       "valueColoringMode": "HASH"
     },
     "sorting": [],
