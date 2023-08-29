@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1693285765021,
+    "lastModifiedOn": 1693285802651,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -91,6 +91,11 @@
   "schema": {
     "columns": [
       {"name":"location","type":"string"},
+      {"name":"continent","type":"string"},
+      {"name":"total_cases_sum","type":"double"},
+      {"name":"new_cases_stddev","type":"double"},
+      {"name":"new_cases_per_million_max","type":"double"},
+      {"name":"icu_patients_per_million_max","type":"double"},
       {"name":"count","type":"bigint"}
     ],
     "userModified": true
