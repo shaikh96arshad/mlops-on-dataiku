@@ -29,8 +29,47 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnReorder",
+      "params": {
+        "columns": [
+          "location"
+        ],
+        "reorderAction": "AT_START",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MeasureNormalize",
+      "params": {
+        "column": "total_cases"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "(new_cases_per_million + 1)",
+        "column": "newcolumn_expression"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -61,7 +100,76 @@
       "meaning": "Date"
     }
   },
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "date": 100,
+    "new_deaths_smoothed": 158,
+    "new_cases_smoothed_per_million": 240,
+    "people_vaccinated_per_hundred": 233,
+    "population_density": 150,
+    "weekly_hosp_admissions_per_million": 270,
+    "aged_70_older": 134,
+    "total_vaccinations": 150,
+    "excess_mortality_cumulative_absolute": 285,
+    "diabetes_prevalence": 158,
+    "total_vaccinations_per_hundred": 240,
+    "excess_mortality": 135,
+    "positive_rate": 134,
+    "gdp_per_capita": 134,
+    "total_cases": 134,
+    "median_age": 134,
+    "new_vaccinations_smoothed_per_million": 293,
+    "new_people_vaccinated_smoothed": 240,
+    "total_deaths_per_million": 195,
+    "new_tests_smoothed_per_thousand": 248,
+    "weekly_icu_admissions": 173,
+    "total_boosters": 134,
+    "weekly_hosp_admissions": 180,
+    "male_smokers": 134,
+    "population": 134,
+    "new_tests": 134,
+    "tests_per_case": 134,
+    "total_tests_per_thousand": 195,
+    "new_vaccinations_smoothed": 203,
+    "continent": 113,
+    "total_cases_per_million": 188,
+    "life_expectancy": 134,
+    "new_deaths_per_million": 180,
+    "new_vaccinations": 135,
+    "new_cases_per_million": 173,
+    "aged_65_older": 134,
+    "cardiovasc_death_rate": 173,
+    "new_deaths_smoothed_per_million": 248,
+    "hosp_patients_per_million": 203,
+    "extreme_poverty": 134,
+    "new_tests_per_thousand": 180,
+    "new_people_vaccinated_smoothed_per_hundred": 300,
+    "human_development_index": 188,
+    "female_smokers": 134,
+    "handwashing_facilities": 180,
+    "icu_patients": 134,
+    "tests_units": 100,
+    "hospital_beds_per_thousand": 210,
+    "people_vaccinated": 143,
+    "icu_patients_per_million": 195,
+    "excess_mortality_cumulative": 218,
+    "people_fully_vaccinated_per_hundred": 278,
+    "hosp_patients": 113,
+    "total_boosters_per_hundred": 210,
+    "new_cases": 134,
+    "new_cases_smoothed": 150,
+    "newcolumn_expression": 165,
+    "weekly_icu_admissions_per_million": 263,
+    "stringency_index": 135,
+    "new_tests_smoothed": 150,
+    "total_deaths": 134,
+    "new_deaths": 134,
+    "people_fully_vaccinated": 188,
+    "reproduction_rate": 143,
+    "excess_mortality_cumulative_per_million": 300,
+    "location": 113,
+    "total_tests": 134,
+    "iso_code": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
