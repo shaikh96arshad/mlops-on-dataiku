@@ -30,16 +30,295 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": false,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": false,
+        "showCumulativeDistributionFunction": false,
+        "xColumns": [
+          {
+            "name": "iso_code",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "total_deaths",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "total_deaths_per_million",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "reproduction_rate",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "iso_code",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "YbwC49a"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wa8iyBW"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "1FJ1VW5"
+              }
+            ],
+            "id": "kxmaFG6"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "total_deaths",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "total_deaths",
+                  "type": "CATEGORICAL"
+                },
+                "id": "v9kz7L7"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "total_deaths",
+                  "type": "CATEGORICAL"
+                },
+                "id": "AEXc9RL"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "total_deaths",
+                  "type": "CATEGORICAL"
+                },
+                "id": "4tJNSjZ"
+              }
+            ],
+            "id": "RNOBoyK"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "total_deaths_per_million",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "total_deaths_per_million",
+                  "type": "CATEGORICAL"
+                },
+                "id": "mGhPAuD"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "total_deaths_per_million",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZCEvjEg"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "total_deaths_per_million",
+                  "type": "CATEGORICAL"
+                },
+                "id": "WSRu2dE"
+              }
+            ],
+            "id": "ZoP9N3G"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "reproduction_rate",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "reproduction_rate",
+                  "type": "CATEGORICAL"
+                },
+                "id": "NO2CJLH"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "reproduction_rate",
+                  "type": "CATEGORICAL"
+                },
+                "id": "zyC8A3v"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "reproduction_rate",
+                  "type": "CATEGORICAL"
+                },
+                "id": "8O8mWaP"
+              }
+            ],
+            "id": "W39Y2MA"
+          }
+        ],
+        "id": "GvbnR3z"
+      }
+    ],
     "id": "k0F4JVr"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1693284977605,
+    "lastModifiedOn": 1693285105082,
     "extendedProperties": {}
   },
   "creationTag": {
