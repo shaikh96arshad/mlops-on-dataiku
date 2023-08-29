@@ -1,0 +1,733 @@
+{
+  "dataSpec": {
+    "inputDatasetSmartName": "covid19___orignal_prepared",
+    "datasetSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "ascending": false,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1
+    },
+    "autoRefreshSample": true,
+    "refreshTrigger": 0,
+    "containerSelection": {
+      "containerMode": "INHERIT"
+    }
+  },
+  "rootCard": {
+    "type": "worksheet_root",
+    "confidenceLevel": 0.95,
+    "showConfidenceInterval": false,
+    "cards": [
+      {
+        "type": "univariate_header",
+        "showHistogram": true,
+        "showQuantile": true,
+        "showFrequencyTable": true,
+        "showSummary": true,
+        "showBoxPlot": true,
+        "showCumulativeDistributionFunction": false,
+        "xColumns": [
+          {
+            "name": "continent",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "excess_mortality_cumulative",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "excess_mortality_cumulative_absolute",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "extreme_poverty",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "female_smokers",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "handwashing_facilities",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "iso_code",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "location",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "male_smokers",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "tests_units",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "continent",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "continent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Cpn0D6y"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "continent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "UQ48L6V"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "continent",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Tzyo7fy"
+              }
+            ],
+            "id": "hTwHx9H"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "excess_mortality_cumulative",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "excess_mortality_cumulative",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Um8TI5X"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "excess_mortality_cumulative",
+                  "type": "CATEGORICAL"
+                },
+                "id": "GIO3lwL"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "excess_mortality_cumulative",
+                  "type": "CATEGORICAL"
+                },
+                "id": "pz9gFXd"
+              }
+            ],
+            "id": "GPlNuLp"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "excess_mortality_cumulative_absolute",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "excess_mortality_cumulative_absolute",
+                  "type": "CATEGORICAL"
+                },
+                "id": "4zWmFP0"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "excess_mortality_cumulative_absolute",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ViZY8Uu"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "excess_mortality_cumulative_absolute",
+                  "type": "CATEGORICAL"
+                },
+                "id": "ZzBhRUq"
+              }
+            ],
+            "id": "MxcTr6b"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "extreme_poverty",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "extreme_poverty",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IZKuAnf"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "extreme_poverty",
+                  "type": "CATEGORICAL"
+                },
+                "id": "IUJegKV"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "extreme_poverty",
+                  "type": "CATEGORICAL"
+                },
+                "id": "o1kDgWu"
+              }
+            ],
+            "id": "EDQoLP2"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "female_smokers",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "female_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "i6fMhpz"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "female_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "rcqEkpq"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "female_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "hMT0uoH"
+              }
+            ],
+            "id": "uz83scf"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "handwashing_facilities",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "handwashing_facilities",
+                  "type": "CATEGORICAL"
+                },
+                "id": "myM8Zo0"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "handwashing_facilities",
+                  "type": "CATEGORICAL"
+                },
+                "id": "wLsKkDI"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "handwashing_facilities",
+                  "type": "CATEGORICAL"
+                },
+                "id": "xodScjE"
+              }
+            ],
+            "id": "pJNNnM0"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "iso_code",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Ti5WZXJ"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "CT1rdhI"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "iso_code",
+                  "type": "CATEGORICAL"
+                },
+                "id": "PoRWUXf"
+              }
+            ],
+            "id": "Quv7Id0"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "location",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "location",
+                  "type": "CATEGORICAL"
+                },
+                "id": "XG4ZbD3"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "location",
+                  "type": "CATEGORICAL"
+                },
+                "id": "p2ESwLk"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "location",
+                  "type": "CATEGORICAL"
+                },
+                "id": "SoVozIC"
+              }
+            ],
+            "id": "KZPrxMM"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "male_smokers",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "male_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "yQJ4C2V"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "male_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "9Gcwagx"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "male_smokers",
+                  "type": "CATEGORICAL"
+                },
+                "id": "whCUCEY"
+              }
+            ],
+            "id": "PBxX2EU"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "tests_units",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
+                "column": {
+                  "name": "tests_units",
+                  "type": "CATEGORICAL"
+                },
+                "id": "63ADfFk"
+              },
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "totalCount": true,
+                  "mean": true,
+                  "sum": false,
+                  "median": true,
+                  "std": true,
+                  "variance": false,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": true,
+                  "nbEmpty": true,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": true,
+                  "nbNonEmpty": false,
+                  "min": true,
+                  "max": true,
+                  "range": false,
+                  "mode": true
+                },
+                "column": {
+                  "name": "tests_units",
+                  "type": "CATEGORICAL"
+                },
+                "id": "Yy2VwC5"
+              },
+              {
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
+                "column": {
+                  "name": "tests_units",
+                  "type": "CATEGORICAL"
+                },
+                "id": "B6HGPcA"
+              }
+            ],
+            "id": "Mxb2jkr"
+          }
+        ],
+        "id": "4mgKwoi"
+      }
+    ],
+    "id": "wf6M4Fv"
+  },
+  "name": "Worksheet",
+  "versionTag": {
+    "versionNumber": 1,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1693285477306,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1693285438403,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
