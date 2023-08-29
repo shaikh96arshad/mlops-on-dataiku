@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1693283367164,
+    "lastModifiedOn": 1693283640095,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -90,9 +90,9 @@
   },
   "schema": {
     "columns": [
+      {"name":"location","type":"string"},
       {"name":"iso_code","type":"string"},
       {"name":"continent","type":"string"},
-      {"name":"location","type":"string"},
       {"name":"date","type":"string","meaning":"Date"},
       {"name":"total_cases","type":"double"},
       {"name":"new_cases","type":"double"},
@@ -102,6 +102,7 @@
       {"name":"new_deaths_smoothed","type":"double"},
       {"name":"total_cases_per_million","type":"double"},
       {"name":"new_cases_per_million","type":"double"},
+      {"name":"newcolumn_expression","type":"double"},
       {"name":"new_cases_smoothed_per_million","type":"double"},
       {"name":"total_deaths_per_million","type":"double"},
       {"name":"new_deaths_per_million","type":"double"},
