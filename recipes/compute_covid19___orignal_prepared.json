@@ -68,11 +68,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1693283640212,
+    "lastModifiedOn": 1693286730160,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -83,7 +83,10 @@
     "lastModifiedOn": 1693283367197,
     "extendedProperties": {}
   },
-  "tags": [],
+  "tags": [
+    "imported",
+    "recipe-editor"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
